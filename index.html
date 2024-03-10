@@ -32,7 +32,7 @@
         <textarea rows="3" cols="25" id="address"></textarea><br />
         Mobile No<font color="red">*</font>
         <input value="" type="text" id="mobile-number" /><br />
-        <input type="submit" onclick="formValidation()" value="submit" />
+        <input type="submit" onclick="formValidation();" value="submit" />
 
         <script>
           function formValidation() {
@@ -73,7 +73,7 @@
               }
               if (address.length == 0) {
                 alert("Address is INVALID");
-                textarea.focus;
+                address.focus;
               }
               if (!checkEmail) {
                 alert("Email is INVALID");
